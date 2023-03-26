@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-nunito">
+    <!-- HEADER SECTION -->
+    <header>
+      <nav class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4">
+          <div class="lg:flex lg:items-center lg:justify-between">
+            <div class="flex items-center justify-between">
+              <a
+                href="#https://vcertk.com/"
+                target="_blank"
+                class="inline-flex items-center gap-2 font-semibold"
+              >
+                <img
+                  class="h-6 w-auto sm:h-7"
+                  src="Assets/Images/college-logo.png"
+                  alt="logo"
+                />
+                Vaish College of Engineering
+              </a>
+              <!-- Mobile menu button -->
+              <div class="lg:hidden">
+                <button aria-label="toggle menu" id="toggle-btn">
+                  <i
+                    class="ri-menu-line text-xl font-semibold text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div
+              class="absolute inset-x-0 z-20 mt-4 h-0 w-full overflow-hidden bg-white px-2 opacity-0 shadow-md transition duration-300 ease-in-out lg:relative lg:top-0 lg:mt-0 lg:h-auto lg:w-auto lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none"
+              id="nav-menu"
+            >
+              <div class="lg:flex lg:items-center">
+                <a
+                  href="#about"
+                  class="mx-4 block capitalize text-gray-700 hover:text-blue-600"
+                  >About</a
+                >
+                <a
+                  href="#benefits"
+                  class="mx-4 mt-4 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                  >Benefits</a
+                >
+                <a
+                  href="#prizes"
+                  class="mx-4 mt-4 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                  >Prizes</a
+                >
+                <a
+                  href="#rules"
+                  class="mx-4 mt-4 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                  >Eligibility & Rules</a
+                >
+                <a
+                  href="#judges"
+                  class="mx-4 mt-4 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                  >Judges</a
+                >
+                <a
+                  href="#footer"
+                  class="mx-4 mt-4 block pb-4 capitalize text-gray-700 hover:text-blue-600 lg:mt-0 lg:pb-0"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="h-[38rem] w-full bg-cover bg-center"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+        "
+      >
+        <div
+          class="flex h-full w-full items-center justify-center bg-gray-900/40"
+        >
+          <div class="text-center">
+            <h1
+              class="text-xl font-semibold text-white md:text-2xl lg:text-4xl"
+            >
+              "The Hackathon Experience: Building, Learning, and Growing
+              Together".<span class="text-blue-400"></span>
+            </h1>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSde_FQQE14vs3Qc1D0JGQvDLk8q92FTrNEK_lb3Mv1HVNoOgw/viewform?usp=sf_link"
+              target="_blank"
+              class="mt-4 inline-block transform rounded-md bg-blue-600 px-5 py-2 text-sm font-medium capitalize text-white transition-colors duration-300 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none lg:w-auto"
+              >Register Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section
+      class="relative bg-dark py-8 before:absolute before:left-0 before:top-1/2 before:h-2/3 before:w-2 before:-translate-y-1/2 before:bg-blue-600 lg:py-16 lg:before:w-4"
+      id="about"
+    >
+      <div class="container mx-auto px-6 pb-10">
+        <h1
+          class="mb-8 text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl xl:mb-12"
+        >
+          About <span class="text-blue-500">Techathon</span>
+        </h1>
+        <p class="mx-auto max-w-7xl text-gray-500 lg:text-lg">
+          We are organizing a 8-hour hackathon event, focused on developing
+          innovative solutions for environmental sustainability. Participants
+          will form teams and work to create working prototypes and solutions to
+          challenges facing our planet. Throughout the event, teams will have
+          access to expert mentors, resources, and technology to support their
+          development. At the end of the hackathon, each team will present their
+          solution to a panel of judges, who will evaluate the ideas based on
+          creativity, feasibility, and potential impact. The winning team will
+          receive a prize and the opportunity to further develop their solution.
+        </p>
+      </div>
+    </section>
+
+    <!-- BENEFITS SECTION -->
+    <section class="bg-white py-8 lg:py-16" id="benefits">
+      <div class="container mx-auto px-6 pb-10">
+        <h1
+          class="text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl"
+        >
+          Benefits of <br />
+          participating in <span class="text-blue-500">Techathon</span>
+        </h1>
+
+        <div
+          class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:grid-cols-3 xl:gap-16"
+        >
+          <div
+            class="flex flex-col items-center space-y-3 rounded-xl bg-gray-100 p-6 text-center"
+          >
+            <img
+              src="Assets/Icons/networking.png"
+              alt=""
+              class="h-12 rounded-full"
+            />
+
+            <h1 class="text-xl font-semibold capitalize text-gray-700">
+              Networking
+            </h1>
+
+            <p class="text-gray-500">
+              At a hackathon event, you will usually meet people who have the
+              same interests and skills as you. This creates the perfect
+              environment for networking. All you need to do is network and
+              exchange contact information with your fellow coders. Who knows,
+              you may end up collaborating in the future.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center space-y-3 rounded-xl bg-gray-100 p-6 text-center"
+          >
+            <img
+              src="Assets/Icons/resume.png"
+              alt=""
+              class="h-12 rounded-full"
+            />
+            <h1 class="text-xl font-semibold capitalize text-gray-700">
+              Add value to your resume or CV
+            </h1>
+
+            <p class="text-gray-500">
+              Hackathon participation looks very good on your resume or CV. It
+              signals to people that you have programming skills, experience
+              working in intense environments, and know how to win. People know
+              that participating in a hackathon instantly increases your
+              knowledge and skill level.
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center space-y-3 rounded-xl bg-gray-100 p-6 text-center"
+          >
+            <img src="Assets/Icons/idea.png" alt="" class="h-12 rounded-full" />
+
+            <h1 class="text-xl font-semibold capitalize text-gray-700">
+              Create new concepts and ideas
+            </h1>
+
+            <p class="text-gray-500">
+              Intense problem-solving environments like hackathons facilitate
+              the creation of innovative ideas and concepts. You must work with
+              people from various fields, with multiple interests and skills,
+              all collaborating to solve the same problem. The fact that there
+              are time constraints make the task more exciting and brings out
+              the best in people.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIZES SECTION -->
+    <section class="bg-dark py-8 lg:py-16" id="prizes">
+      <div class="container mx-auto px-6 pb-10">
+        <h2
+          class="mb-8 text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl xl:mb-12"
+        >
+          Prizes
+        </h2>
+
+        <div class="flex flex-col gap-8 lg:flex-row lg:gap-0">
+          <div class="flex w-full flex-col items-center justify-center">
+            <img src="Assets/Icons/cash.png" alt="cash prize" class="h-16" />
+            <h3 class="mt-2 text-lg font-medium text-gray-700">
+              Cash Prizes upto &#8377;13,000 and Goodies
+            </h3>
+          </div>
+          <div class="flex w-full flex-col items-center justify-center">
+            <img src="Assets/Icons/reward.png" alt="cash prize" class="h-16" />
+            <h3 class="mt-2 text-lg font-medium text-gray-700">
+              Recognition and Exposure
+            </h3>
+          </div>
+          <div class="flex w-full flex-col items-center justify-center">
+            <img
+              src="Assets/Icons/certificate.png"
+              alt="cash prize"
+              class="h-16"
+            />
+            <h3 class="mt-2 text-lg font-medium text-gray-700">
+              Participation Certificate
+            </h3>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-8 max-w-7xl lg:text-lg">
+          <ul class="lg:list-disc">
+            <li>
+              <p class="text-gray-500">
+                1st Place: The winning team will receive a cash prize of
+                &#8377;5100, as well as mentorship and guidance to help them
+                move their solution forward.
+              </p>
+            </li>
+            <li>
+              <p class="text-gray-500">
+                2nd Place: The second-place team will receive a cash prize of
+                &#8377;3,100, as well as access to additional resources to
+                further develop their solution.
+              </p>
+            </li>
+            <li>
+              <p class="text-gray-500">
+                3rd Place: The third-place team will receive a cash prize of
+                &#8377;2,100, as well as access to additional resources to
+                further develop their solution.
+              </p>
+            </li>
+            <li>
+              <p class="text-gray-500">
+                4th Place: The fourth-place team will receive a cash prize of
+                &#8377;1,100, as well as access to additional resources to
+                further develop their solution.
+              </p>
+            </li>
+            <li>
+              <p class="text-gray-500">
+                5th Place: The fifth-place team will receive a cash prize of
+                &#8377;1,100, as well as access to additional resources to
+                further develop their solution.
+              </p>
+            </li>
+            <li>
+              <p class="mt-4 text-gray-500">
+                All participants: Every participant will receive a certificate
+                of participation, as well as access to valuable resources and
+                networking opportunities with industry experts and potential
+                employers.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RULES -->
+    <!-- <section class="bg-dark lg:py-16 py-8" id="prizes">
+    <div class="container px-6 py-10 mx-auto"> -->
+    <section class="bg-white py-8 lg:py-16" id="rules">
+      <div class="container mx-auto px-6 pb-10">
+        <h2
+          class="mb-8 text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl xl:mb-12"
+        >
+          Eligibility and Rules
+        </h2>
+        <div class="tab-container">
+          <div
+            class="flex overflow-x-auto overflow-y-hidden whitespace-nowrap border-b border-gray-200"
+          >
+            <button
+              class="cursor-base tab-btn -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 text-center text-sm text-gray-700 focus:outline-none sm:text-base"
+              data-for-tab="1"
+              id="defaultOpen"
+            >
+              Eligibility
+            </button>
+            <button
+              class="cursor-base tab-btn -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 text-center text-sm text-gray-700 focus:outline-none sm:text-base"
+              data-for-tab="2"
+            >
+              Process Guidelines
+            </button>
+          </div>
+          <div class="tab-content p-4 lg:p-8" data-tab="1">
+            <ul class="flex list-disc flex-col gap-2 lg:text-lg">
+              <li>
+                The participant(s) should be students currently enrolled in
+                BTech(any branch) or BCA course in Vaish College of Engineering.
+              </li>
+              <li>
+                The participant(s) can participate either as an individual or as
+                a team with team size not exceeding 3 members.
+              </li>
+              <li>
+                Team formation guidelines:
+                <ul
+                  class="flex list-circle flex-col gap-2 pl-8 pt-4 lg:text-lg"
+                >
+                  <li>The participants can be from any branch.</li>
+                  <li>Cross-year teams are allowed.</li>
+                  <li>
+                    One participant cannot be a member of more than one team.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-content p-4 lg:p-8" data-tab="2">
+            <ol class="flex list-decimal flex-col gap-2 lg:text-lg">
+              <li>
+                Participants shall accept full responsibility for their own work
+                and ensure to work as a team.
+              </li>
+              <li>
+                No participant shall engage in any malicious/illegal activities
+                which do not adhere to general code of conduct for developers.
+                Participants will be immediately disqualified If they are found
+                indulging in malpractice.
+              </li>
+              <li>
+                Participants shall ensure adequate testing, debugging, and
+                review of software and related documents before submission.
+              </li>
+              <li>
+                Disclose any conflicts of interest that cannot reasonably be
+                avoided or escaped.
+              </li>
+              <li>
+                Any malicious attempt will lead to disqualification of the team.
+              </li>
+              <li>
+                Participants have to bear their own responsibility to safeguard
+                their belongings during the event.
+              </li>
+              <li>
+                In case of any emergency or medical assistance, please reach out
+                to the organizers.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUDGES SECTION -->
+    <section class="bg-dark py-8 lg:py-14" id="judges">
+      <div class="container mx-auto px-6 pb-8">
+        <h2
+          class="text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl"
+        >
+          Judges
+        </h2>
+
+        <div
+          class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        >
+          <div class="w-full max-w-xs text-center">
+            <img
+              class="mx-auto h-48 w-full rounded-lg object-cover object-center"
+              src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=739&q=80"
+              alt="avatar"
+            />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700">Ahmed Omer</h3>
+              <span class="mt-1 font-medium text-gray-600">CEO</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img
+              class="mx-auto h-48 w-full rounded-lg object-cover object-center"
+              src="https://images.unsplash.com/photo-1516756587022-7891ad56a8cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              alt="avatar"
+            />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700">Jane Doe</h3>
+              <span class="mt-1 font-medium text-gray-600">Co-founder</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img
+              class="mx-auto h-48 w-full rounded-lg object-cover object-center"
+              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80"
+              alt="avatar"
+            />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700">Steve Ben</h3>
+              <span class="mt-1 font-medium text-gray-600">UI/UX</span>
+            </div>
+          </div>
+
+          <div class="w-full max-w-xs text-center">
+            <img
+              class="mx-auto h-48 w-full rounded-lg object-cover object-center"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+              alt="avatar"
+            />
+
+            <div class="mt-2">
+              <h3 class="text-lg font-medium text-gray-700">
+                Patterson Johnson
+              </h3>
+              <span class="mt-1 font-medium text-gray-600"
+                >Software Engineer</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-white" id="footer">
+      <div class="container mx-auto">
+        <div
+          class="flex flex-col items-center bg-cta-image bg-auto bg-left bg-no-repeat py-8 px-6 lg:bg-cover lg:bg-fixed"
+        >
+          <h3 class="text-center text-sm text-white lg:text-lg">
+            Get ready to innovate, collaborate, and create <br />
+            - register for our hackathon now!
+          </h3>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSde_FQQE14vs3Qc1D0JGQvDLk8q92FTrNEK_lb3Mv1HVNoOgw/viewform?usp=sf_link"
+            target="_blank"
+            class="mt-4 inline-block transform rounded-md bg-blue-600 px-5 py-2 text-sm font-medium capitalize text-white transition-colors duration-300 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none lg:w-auto"
+            >Register Now</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-start justify-around space-y-4 bg-dark px-6 py-8 sm:flex-row sm:space-y-0"
+        >
+          <a
+            href="#https://vcertk.com/"
+            target="_blank"
+            class="hidden items-center gap-2 font-semibold lg:inline-flex"
+          >
+            <img
+              class="h-6 w-auto sm:h-7"
+              src="Assets/Images/college-logo.png"
+              alt="logo"
+            />
+            Vaish College of Engineering
+          </a>
+          <!-- <a href="#" class="text-sm text-gray-600">Made by ❤️ by Tushar</a> -->
+          <div>
+            <h3
+              class="relative inline-block pb-1 text-lg font-medium text-gray-600 before:absolute before:bottom-0 before:h-0.5 before:w-2/3 before:bg-blue-600"
+            >
+              Quick Links
+            </h3>
+            <div class="mt-2">
+              <a
+                href="#about"
+                class="block capitalize text-gray-700 hover:text-blue-600"
+                >About</a
+              >
+              <a
+                href="#benefits"
+                class="mt-1 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                >Benefits</a
+              >
+              <a
+                href="#prizes"
+                class="mt-1 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                >Prizes</a
+              >
+              <a
+                href="#rules"
+                class="mt-1 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                >Eligibility & Rules</a
+              >
+              <a
+                href="#judges"
+                class="mt-1 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0"
+                >Judges</a
+              >
+              <a
+                href="#footer"
+                class="mt-1 block capitalize text-gray-700 hover:text-blue-600 lg:mt-0 lg:pb-0"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div>
+            <h3
+              class="relative mb-2 inline-block pb-1 text-lg font-medium text-gray-600 before:absolute before:bottom-0 before:h-0.5 before:w-2/3 before:bg-blue-600"
+            >
+              Contact Us
+            </h3>
+            <a href="tel:8168146070" class="flex items-center gap-2">
+              <i class="ri-phone-line text-lg text-blue-500"></i> 8168146070
+            </a>
+            <a
+              href="mailto:techathon@gmail.com"
+              class="flex items-center gap-2"
+            >
+              <i class="ri-mail-line text-lg text-blue-500"></i>
+              techathon@gmail.com
+            </a>
+          </div>
+          <div>
+            <h3
+              class="relative mb-2 inline-block pb-1 text-lg font-medium text-gray-600 before:absolute before:bottom-0 before:h-0.5 before:w-2/3 before:bg-blue-600"
+            >
+              Connect With Us
+            </h3>
+            <a href="#" class="flex items-center gap-2 text-base">
+              <i class="ri-instagram-line text-lg text-blue-500"></i>Instagram
+            </a>
+          </div>
+        </div>
+        <div class="bg-dark-footer p-1 text-center">
+          <a
+            href="https://www.instagram.com/tushartom7/"
+            target="_blank"
+            class="text-sm text-white"
+            >Made with ❤️ by <span class="text-blue-200">Tushar</span></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
