@@ -15,6 +15,9 @@ module.exports = {
       },
       backgroundImage: {
         'cta-image': "url('../Assets/Images/cityscape.jpg')",
+      },
+      height: {
+        '2px': '2px',
       }
     },
   },

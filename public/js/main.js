@@ -39,3 +39,13 @@ tabButtons.forEach((tabBtn) => {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+const questions = document.querySelectorAll(".single-faq")
+questions.forEach(question => {
+  const questionBtn = question.querySelector(".faq-btn")
+  const questionContent = question.querySelector(".faq-content")
+  questionBtn.addEventListener("click", () => {
+    questionContent.classList.toggle("hidden")
+  })
+})
