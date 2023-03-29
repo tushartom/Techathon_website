@@ -18,7 +18,10 @@ module.exports = {
       },
       height: {
         '2px': '2px',
-      }
+      },
+      content: {
+        'icon': 'url("../Assets/Icons/medal.png")',
+      },
     },
   },
   plugins: [],
