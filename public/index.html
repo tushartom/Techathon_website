@@ -20,8 +20,8 @@
   </head>
   <body class="font-nunito">
     <!-- HEADER SECTION -->
-    <header>
-      <nav class="bg-white shadow">
+    <header class="header">
+      <nav class="bg-white shadow nav">
         <div class="container mx-auto px-6 py-4">
           <div class="lg:flex lg:items-center lg:justify-between">
             <div class="flex items-center justify-between">
@@ -121,7 +121,7 @@
 
     <!-- ABOUT SECTION -->
     <section
-      class="relative bg-dark py-8 before:absolute before:left-0 before:top-1/2 before:h-2/3 before:w-2 before:-translate-y-1/2 before:bg-blue-600 lg:py-16 lg:before:w-4"
+      class="relative bg-dark py-8 before:absolute before:left-0 before:top-1/2 before:h-2/3 before:w-2 before:-translate-y-1/2 before:bg-blue-600 lg:py-16 lg:before:w-4 section"
       id="about"
     >
       <div class="container mx-auto px-6 pb-10">
@@ -167,7 +167,7 @@
     </section>
 
     <!-- BENEFITS SECTION -->
-    <section class="bg-white py-8 lg:py-16" id="benefits">
+    <section class="bg-white py-8 lg:py-16 section" id="benefits">
       <div class="container mx-auto px-6 pb-10">
         <h1
           class="text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl"
@@ -245,7 +245,7 @@
     </section>
 
     <!-- PRIZES SECTION -->
-    <section class="bg-dark py-8 lg:py-16" id="prizes">
+    <section class="bg-dark py-8 lg:py-16 section" id="prizes">
       <div class="container mx-auto px-6 pb-10">
         <h2
           class="mb-8 text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl xl:mb-12"
@@ -370,12 +370,6 @@
               </div>
             </div>
             <div class="mt-8 text-center">
-              <!-- <p>
-                The winners of the Techathon event will be determined by a panel of judges who will evaluate the projects based on their innovation, creativity, functionality, and impact. The judges will provide feedback to all participants to help them improve their projects.
-              </p> -->
-              <!-- <p class="">
-                Don't miss out on the chance to win exciting prizes and recognition for your project. Register now and start developing your innovative solution to a real-world problem.
-              </p> -->
               <p>
                 In addition to these prizes, all participants will receive a
                 certificate of participation for their efforts.
@@ -389,7 +383,7 @@
     <!-- RULES -->
     <!-- <section class="bg-dark lg:py-16 py-8" id="prizes">
     <div class="container px-6 py-10 mx-auto"> -->
-    <section class="bg-white py-8 lg:py-16" id="rules">
+    <section class="bg-white py-8 lg:py-16 section" id="rules">
       <div class="container mx-auto px-6 pb-10">
         <h2
           class="mb-8 text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl xl:mb-12"
@@ -398,23 +392,23 @@
         </h2>
         <div class="tab-container">
           <div
-            class="flex overflow-x-auto overflow-y-hidden whitespace-nowrap border-b border-gray-200"
+            class="flex overflow-x-auto overflow-y-hidden whitespace-nowrap border-b border-gray-200 process__tabs-container"
           >
             <button
-              class="cursor-base tab-btn -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 text-center text-sm text-gray-700 focus:outline-none sm:text-base lg:text-lg"
-              data-for-tab="1"
+              class="cursor-base process__tab active -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 text-center text-base text-gray-700 focus:outline-none sm:text-base lg:text-lg"
+              data-tab="1"
               id="defaultOpen"
             >
               Eligibility
             </button>
             <button
-              class="cursor-base tab-btn -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 text-center text-sm text-gray-700 focus:outline-none sm:text-base lg:text-lg"
-              data-for-tab="2"
+              class="cursor-base process__tab -mb-px inline-flex h-10 items-center whitespace-nowrap border-b-2 border-transparent bg-transparent px-4 text-center text-base text-gray-700 focus:outline-none sm:text-base lg:text-lg"
+              data-tab="2"
             >
               Process Guidelines
             </button>
           </div>
-          <div class="tab-content p-4 lg:p-8" data-tab="1">
+          <div class="process__content process__content--1 p-4 lg:p-8 process__content-active">
             <ul class="flex list-disc flex-col gap-2 lg:text-lg">
               <li>
                 The participant(s) should be students currently enrolled in
@@ -438,7 +432,7 @@
               </li>
             </ul>
           </div>
-          <div class="tab-content p-4 lg:p-8" data-tab="2">
+          <div class="process__content process__content--2 p-4 lg:p-8">
             <ol class="flex list-decimal flex-col gap-2 lg:text-lg">
               <li>
                 <p class="font-medium">Register for the event:</p>
@@ -501,7 +495,7 @@
     </section>
 
     <!-- JUDGES SECTION -->
-    <section class="bg-dark py-8 lg:py-14" id="judges">
+    <section class="bg-dark py-8 lg:py-14 section" id="judges">
       <div class="container mx-auto px-6 pb-8">
         <h2
           class="text-center text-2xl font-semibold capitalize text-gray-800 lg:text-3xl"
@@ -575,7 +569,7 @@
 
     <!-- ====== FAQ Section Start -->
     <section
-      class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
+      class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] section"
       id="faq"
     >
       <div class="container mx-auto px-6">
