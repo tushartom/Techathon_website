@@ -699,12 +699,24 @@ video {
   height: 2rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-\[38rem\] {
   height: 38rem;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
+.h-80 {
+  height: 20rem;
 }
 
 .w-60 {
@@ -773,12 +785,36 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-\[200px_minmax\(900px\2c _1fr\)_100px\] {
+  grid-template-columns: 200px minmax(900px, 1fr) 100px;
+}
+
+.grid-cols-\[repeat\(3\2c _minmax\(0\2c _400px\)\)\] {
+  grid-template-columns: repeat(3, minmax(0, 400px));
+}
+
+.grid-cols-\[repeat\(1\2c _minmax\(0\2c _320px\)\)\] {
+  grid-template-columns: repeat(1, minmax(0, 320px));
+}
+
+.grid-cols-\[repeat\(1\2c _minmax\(0\2c _280px\)\)\] {
+  grid-template-columns: repeat(1, minmax(0, 280px));
+}
+
+.grid-cols-\[repeat\(1\2c _minmax\(0\2c _300px\)\)\] {
+  grid-template-columns: repeat(1, minmax(0, 300px));
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-start {
@@ -799,6 +835,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-2 {
@@ -970,6 +1010,11 @@ video {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-1 {
@@ -1362,6 +1407,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-96 {
+    height: 24rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1421,8 +1470,12 @@ video {
     width: auto;
   }
 
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .lg\:grid-cols-\[repeat\(3\2c _minmax\(0\2c _400px\)\)\] {
+    grid-template-columns: repeat(3, minmax(0, 400px));
+  }
+
+  .lg\:grid-cols-\[repeat\(3\2c _minmax\(0\2c _320px\)\)\] {
+    grid-template-columns: repeat(3, minmax(0, 320px));
   }
 
   .lg\:flex-row {
@@ -1439,6 +1492,10 @@ video {
 
   .lg\:gap-0 {
     gap: 0px;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
   }
 
   .lg\:bg-transparent {
@@ -1555,10 +1612,6 @@ video {
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .xl\:gap-16 {
