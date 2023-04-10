@@ -134,7 +134,7 @@
           class="mx-auto flex max-w-7xl flex-col gap-4 text-gray-500 lg:text-xl"
         >
           <p>
-            Welcome to the Techathon event! This event is designed for
+            Welcome to the Techathon event on <span class="text-gray-500 font-bold">April 22, 2023!</span> This event is designed for
             participants who want to showcase their technical skills by
             developing innovative solutions to real-world problems. At the
             Techathon event, you have the flexibility to work on your project
@@ -289,7 +289,7 @@
               class="mt-8 flex flex-wrap items-center justify-center gap-y-8 gap-x-12 lg:mt-12"
             >
               <div
-                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow"
               >
                 <p class="text-lg font-semibold">1st Prize -</p>
                 <p class="ml-8 text-lg">₹5,100</p>
@@ -305,7 +305,7 @@
                 </div>
               </div>
               <div
-                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow"
               >
                 <p class="text-lg font-semibold">2nd Prize -</p>
                 <p class="ml-8 text-lg">₹3,100</p>
@@ -321,7 +321,7 @@
                 </div>
               </div>
               <div
-                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow"
               >
                 <p class="text-lg font-semibold">3rd Prize -</p>
                 <p class="ml-8 text-lg">₹2,100</p>
@@ -337,7 +337,7 @@
                 </div>
               </div>
               <div
-                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow"
               >
                 <p class="text-lg font-semibold">4th Prize -</p>
                 <p class="ml-8 text-lg">₹1,100</p>
@@ -353,7 +353,7 @@
                 </div>
               </div>
               <div
-                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]"
+                class="relative flex w-60 rounded-lg bg-dark py-4 pl-8 text-gray-600 shadow"
               >
                 <p class="text-lg font-semibold">5th Prize -</p>
                 <p class="ml-8 text-lg">₹1,100</p>
@@ -508,7 +508,7 @@
         >
           <div class="w-full max-w-xs text-center">
             <img
-              class="mx-auto h-96 w-full rounded-lg object-cover object-top"
+              class="mx-auto h-96 w-full rounded-lg object-cover object-top hover:scale-[1.02] transition"
               src="Assets/Images/Mr. Rajesh Kumar.jpg"
               alt="avatar"
             />
@@ -521,7 +521,7 @@
 
           <div class="w-full max-w-xs text-center">
             <img
-              class="mx-auto h-96 w-full rounded-lg object-cover object-top"
+              class="mx-auto h-96 w-full rounded-lg object-cover object-top hover:scale-[1.02] transition"
               src="Assets/Images/Mr. Vikas Bhayana.jpg"
               alt="avatar"
             />
@@ -534,7 +534,7 @@
 
           <div class="w-full max-w-xs text-center">
             <img
-              class="mx-auto h-96 w-full rounded-lg object-cover object-top"
+              class="mx-auto h-96 w-full rounded-lg object-cover object-top hover:scale-[1.02] transition"
               src="Assets/Images/Mr. Akhilesh Gupta.jpg"
               alt="avatar"
             />
@@ -877,16 +877,19 @@
             >
               Contact Us
             </h3>
-            <a href="tel:8168146070" class="flex items-center gap-2">
-              <i class="ri-phone-line text-lg text-blue-500"></i> 7497060635 | 7988411896
-            </a>
+            <div href="tel:8168146070" class="flex items-center gap-2 text-lg">
+              <i class="ri-phone-line text-lg text-blue-500"></i>
+              <a href="tel:7497060635" class="hover:text-blue-600 text-gray-700">7497060635</a>|
+              <a href="tel:7988411896" class="hover:text-blue-600 text-gray-700">7988411896</a>|
+              <a href="tel:9991074299" class="hover:text-blue-600 text-gray-700">9991074299</a>
+            </div>
             
             <a
               href="mailto:Techathon@gmail.com"
               class="flex items-center gap-2"
             >
               <i class="ri-mail-line text-lg text-blue-500"></i>
-              techathonvce@gmail.com
+              <span class="hover:text-blue-600 text-gray-700">techathonvce@gmail.com</span>
             </a>
           </div>
           <div>
@@ -896,7 +899,7 @@
               Connect With Us
             </h3>
             <a href="#" class="flex items-center gap-2 text-base">
-              <i class="ri-instagram-line text-lg text-blue-500"></i>Instagram
+              <i class="ri-instagram-line text-lg text-blue-500"></i><span class="hover:text-blue-600 text-gray-700">Instagram</span>
             </a>
           </div>
         </div>
